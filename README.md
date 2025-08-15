@@ -1,4 +1,4 @@
-<div align="center"><img src="TalkHealLogo.png" style="width: 220px; height: 220px;" /></div>
+<div align="center"><img src="/static_files/TalkHealLogo.png" style="width: 220px; height: 220px;" /></div>
 
 # <div align="center">TALKHEAL</div>
 
@@ -89,11 +89,11 @@
 ## 📸 Screenshots
 
 <div align="center">
-  <img src="light_ss.jpg" alt="Main Screenshot" width="600"/>
+  <img src="static_files/light_ss.jpg" alt="Main Screenshot" width="600"/>
   <br>
-  <img src="dark_ss.jpg" width="200"/></a>
-  <img src="blue_ss.jpg" width="200"/></a>
-  <img src="lav_ss.jpg" width="200"/></a>
+  <img src="static_files/dark_ss.jpg" width="200"/></a>
+  <img src="static_files/blue_ss.jpg" width="200"/></a>
+  <img src="static_files/lav_ss.jpg" width="200"/></a>
 </div>
 
 ## 📺 Video Explanation
@@ -103,6 +103,86 @@ For a detailed walkthrough of TalkHeal's features and how to use them, check out
 **[Insert YouTube Video Link Here]**
 
 ---
+
+## 📁 Project Structure
+
+```bash
+TalkHeal/
+├── .devcontainer/               # Dev container configuration (for VS Code)
+├── .github/                     # GitHub workflows and issue templates
+├── .streamlit/
+│   └── secrets.toml             # Streamlit secrets (API keys, credentials)
+├── assets/
+│   ├── pink.png
+│   └── yoga_animation.json
+├── audio/
+├── audio_files/
+├── auth/
+│   ├── auth_utils.py            # Authentication functions (login, register)
+│   └── users.yaml               # User credentials and roles (YAML format)
+├── components/
+│   ├── Breathing_Exercise.py
+│   ├── __init__.py
+│   ├── chat_interface.py
+│   ├── emergency_page.py
+│   ├── focus_session.py
+│   ├── header.py
+│   ├── login_page.py
+│   ├── mood_dashboard.py
+│   ├── profile.py
+│   ├── sidebar.py
+│   └── theme_toggle.py
+├── core/
+│   ├── __init__.py
+│   ├── config.py                # Central app configuration
+│   ├── theme.py
+│   └── utils.py                 # Common helper functions
+├── css/
+│   └── styles.py
+├── data/
+│   └── Yoga.json                # Yoga session data (poses, flows)
+├── favicon/
+│   ├── apple-touch-icon.png
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── site.webmanifest
+│   ├── web-app-manifest-192x192.png
+│   └── web-app-manifest-512x512.png
+├── pages/
+│   ├── About.py
+│   ├── Journaling.py           # Journaling UI page
+│   ├── Yoga.py                 # Yoga activity page
+│   └── selfHelpTools.py        # Tools/resources for self-help
+├── .gitignore                   # Files/folders ignored by Git
+├── Background.jpg
+├── Background_Dark.jpg
+├── CODE_OF_CONDUCT.md          # Contribution behavior guidelines
+├── CONTRIBUTING.md             # Instructions for contributing
+├── LICENSE                     # License for the project (e.g., MIT)
+├── MOOD_TRACKING_README.md     # Info about the mood tracking feature
+├── README.md                   # Main project documentation
+├── TalkHeal.pptx               # Presentation for TalkHeal
+├── TalkHeal.py                 # 🔷 Main app entry point (Streamlit)
+├── TalkHealLogo.png
+├── blue.png
+├── blue_ss.jpg
+├── dark.png
+├── dark_ss.jpg
+├── generate_audio.py           # Script to convert text to speech/audio
+├── journals.db                 # Database of user journal entries
+├── lav_ss.jpg
+├── lavender.png
+├── light_ss.jpg
+├── mint.png
+├── requirements.txt            # Python package dependencies
+├── streamlit.toml              # Streamlit configuration
+├── test_mood_dashboard.py      # Test cases for mood dashboard
+└── users.db                    # Database for user authentication
+
+```
+---
+
 
 ## 🛠️ Technologies Used
 

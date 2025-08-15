@@ -139,7 +139,10 @@ if not st.session_state.conversations:
 #     with main_area:
 #         render_emergency_page()
 # else:
-if st.session_state.get("show_focus_session"):
+if st.session_state.get("show_emergency_page"):
+    with main_area:
+        render_emergency_page()
+elif st.session_state.get("show_focus_session"):
     with main_area:
         render_focus_session()
 elif st.session_state.get("show_mood_dashboard"):
